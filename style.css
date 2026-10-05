@@ -1,0 +1,579 @@
+@import url('css/fonts.css');
+
+:root {
+    --main-color: #2c2b2b;
+    --accent-color: #A68B40;
+    --accent-color-2: #ECE5D1;
+    --accent-color-3: #D8CBA2;
+    --accent-color-4: #f6f2e8;
+    --light-color: #ffffff;
+    --gray-color: #e9e9e9;
+    --gray-color2: #d9d9d9;
+    --gray-text: #737373;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--gray-color);
+  color: var(--main-color);
+  overflow-x: hidden;
+}
+
+/* Nagłówki */
+.major-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.minor-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+/* Nagłówek strony i nawigacja */
+.site-header {
+  background-color: var(--light-color);
+  box-shadow: 6px 6px 7.5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  display: block;
+  width: 25%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: "Tanker-Regular";
+  font-size: 1.5rem;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+.nav-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Sekcje ogólne */
+.section {
+  padding: 96px 48px 64px 48px;
+  background-color: var(--accent-color-2);
+}
+
+.white-section {
+  background-color: var(--light-color);
+}
+
+.accent-section {
+  background-color: var(--accent-color-3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.description {
+  line-height: 1.45;
+  color: var(--gray-text);
+}
+
+.description p {
+  margin-bottom: 1rem;
+}
+
+/* Sekcja Hero */
+.hero-section {
+  position: relative;
+  width: 100%;
+  padding: 160px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #7f7f7f;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(58, 58, 58, 0.5);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 960px;
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  color: var(--light-color);
+}
+
+.hero-title {
+  font-family: "Tanker-Regular", sans-serif;
+  font-size: 2.25rem;
+  letter-spacing: 0.1em;
+}
+
+.hero-subtitle {
+  font-family: 'LeagueSpartanRegular', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Przyciski */
+.btn {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  font-family: 'LeagueSpartan', sans-serif;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn {
+  font-family: 'LeagueSpartanBold', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.67em 1.33em;
+  text-decoration: none;
+  text-shadow: none;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--accent-color-2);
+  transform: translateY(-2px);
+  color: var(--accent-color);
+  box-shadow: 0 6px 16px var(--accent-color);
+}
+
+.small-btn {
+  padding: 0.1rem 0.5rem;
+}
+
+/* Sekcja partnerów logotypów */
+.partners-section {
+  padding: 32px 24px;
+  margin: 0;
+}
+
+.partners-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--gray-text);
+  letter-spacing: 0.1em;
+}
+
+.partners-logos {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.partner-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.partner-logo-img {
+  height: 100px;
+  width: 100%;
+}
+
+/* Nowe układy dwukolumnowe (Tekst + Zdjęcie ze stocka) */
+.content-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.content-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.content-row .text-block {
+  flex: 1.5;
+}
+
+.stock-img-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.styled-stock-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.img-caption {
+  font-size: 0.85rem;
+  color: var(--gray-text);
+  text-align: right;
+  font-style: italic;
+}
+
+.goals-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--gray-text);
+  list-style: disc;
+}
+
+.additional-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.info-card {
+  background-color: var(--accent-color-4);
+  padding: 24px;
+  border-radius: 0 16px 16px 0;
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.info-card h4 {
+  margin-bottom: 8px;
+  color: var(--main-color);
+}
+
+.info-card p {
+  color: var(--gray-text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Finansowanie i partnerzy gridy */
+.funding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.funding-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.funding-label {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.partner-card {
+  padding: 24px;
+}
+
+.partner-role {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.partner-card address a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.partner-card address a:hover {
+  color: var(--accent-color);
+}
+
+/* Oryginalne karty i znaczniki (zachowane kompatybilności) */
+.card {
+  display: inline-flex;
+  background-color: var(--gray-color);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 0 16px 16px 0;
+  padding: 24px;
+}
+
+.tags-card {
+  background-color: var(--gray-color);
+  display: flex;
+  align-items: flex-start;
+}
+
+.tags-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.tag {
+  border: 2px solid var(--gray-color2);
+  color: var(--main-color);
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 0 1em 0 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.grid-img {
+  height: 328px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.grid-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.grid-photo:hover {
+  transform: scale(1.02);
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.about-img {
+  height: 328px;
+  object-fit: contain;
+  border-radius: 13px;
+}
+
+/* Stopka */
+.footer {
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 64px 32px 64px;
+  gap: 32px;
+  margin: 32px 0 0 0;
+  border-radius: 0;
+}
+
+.footer-brand {
+  width: 20%;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.footer-description {
+  font-size: 16px;
+  color: var(--light-color);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Płynne przewijanie z korektą wysokości nawigacji */
+#kontakt, #realizacje, #o-operacji, #program, #finansowanie {
+  scroll-margin-top: 160px;
+}
+
+/* Responsywność (RWD) dla urządzeń mobilnych (<= 768px) */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0 8px 16px 8px;
+    flex-direction: column;
+    /* gap: 16px; */
+  }
+
+  .header-logo {
+    width: 50%;
+    min-width: 100px;
+    max-width: 300px;
+  }
+
+  .nav-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    padding: 5rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.2em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .tag {
+    font-size: 1.1rem;
+  }
+
+  .content-row,
+  .content-row.reverse {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .additional-info-grid,
+  .funding-grid,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .styled-stock-img {
+    height: 220px;
+  }
+
+  .images-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .grid-img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .card {
+    padding: 24px 16px;
+    min-width: 210px;
+  }
+
+  .partners-section {
+    padding: 16px 12px 32px 12px;
+  }
+
+  .partners-logos {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .about-us-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    width: 75%;
+    max-width: none;
+  }
+}

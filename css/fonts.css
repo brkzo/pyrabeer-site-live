@@ -1,0 +1,36 @@
+/* Definicje czcionek lokalnych */
+@font-face {
+  font-family: 'LeagueSpartanBold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/LeagueSpartan-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'LeagueSpartanRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/LeagueSpartan-Regular.ttf") format("truetype");
+}
+
+/**
+* @license
+*
+* Font Family: Tanker
+* Designed by: Ruosi Huang
+* URL: https://www.fontshare.com/fonts/tanker
+* © 2026 Indian Type Foundry
+*
+* Tanker Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Tanker-Regular';
+  src: url('../fonts/Tanker-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
