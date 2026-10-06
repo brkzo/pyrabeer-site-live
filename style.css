@@ -473,6 +473,10 @@ body {
   scroll-margin-top: 160px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Responsywność (RWD) dla urządzeń mobilnych (<= 768px) */
 @media (max-width: 768px) {
   .site-header {
